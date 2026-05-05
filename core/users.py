@@ -1,4 +1,6 @@
-class AuthAPI:
+
+
+class UsersAPI:
     def __init__(self, client):
         self.client = client
 
