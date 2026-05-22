@@ -1,4 +1,4 @@
-# api/test_users.py
+# api/product/test_category_list.py
 from core.product import ProductAPI
 
 
