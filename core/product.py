@@ -24,3 +24,11 @@ class ProductAPI:
             f"/web/v2/products/product_variant/siblings/{variant_id}/",
             params=params,
         )
+
+    def get_variants_for_card(self, variant_ids: list):
+        """
+        POST /web/v2/products/product_variants_for_card/
+        payload: {"product_variants": [id1, id2, ...]}
+        """
+        payload = {"product_variants": variant_ids}
+        return self.client.post("/web/v2/products/product_variants_for_card/", json=payload)
